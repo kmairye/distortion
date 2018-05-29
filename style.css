@@ -1,0 +1,61 @@
+:root {
+    --pink: pink;
+    --pinkOp: rgba(251,33,142, 0.3);
+    --white: #fefefe;
+    --grey: #eee;
+}
+html {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+h1 {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 5rem;
+}
+body {
+    background-color: var(--pinkOp); 
+    margin: 0;
+}
+header {
+    height: 10vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+}
+#headline {
+    color: var(--white);
+    text-align: center;
+}
+main {
+    background-color: var(--white); 
+    height: 80vw;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.third {
+    display: grid;
+    align-content: center;
+}
+#number {
+    text-align: center;
+}
+polyline {
+    fill: none;
+    stroke: pink;
+    stroke-width: 5;
+}
+/* circle {
+    fill: var(--pink);
+    transition: all 10s ease;
+} */
+footer {
+    height: 10vw;
+}
