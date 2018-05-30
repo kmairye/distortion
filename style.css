@@ -43,6 +43,7 @@ main {
 .third {
     display: grid;
     align-content: center;
+    color: var(--pinkOp);
 }
 #number {
     text-align: center;
