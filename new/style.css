@@ -1,0 +1,83 @@
+:root {
+    --circles: #F9CA33;
+    --borders: #FEF0EC;
+    --tap: #ADADB2;
+
+}
+
+
+html {
+    font-size: 1em;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+#main-con {
+    position: relative;
+    height: 30vw;
+    width: 30vw;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+    border-left: 10px solid var(--borders);
+    border-right: 10px solid var(--borders);
+    border-bottom: 10px solid var(--borders);
+}
+
+
+#tap {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20vw;
+    width: 10vw;
+    background-color: var(--tap);
+}
+
+#foss {
+    position: absolute;
+    background-color: var(--circles);
+    height: 120%;
+    width: 0vw;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    transition: width 2s ease;
+}
+
+
+#beer {
+    position: absolute;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: var(--circles);
+    transition: all 10s ease;
+}
+
+
+.shadow {
+    position: absolute;
+    border-radius: 30%;
+    background-color: var(--borders);
+    opacity: 0.6;
+    height: 1vw;
+}
+
+
+.top-shadow {
+    width: 10vw;
+    top: 80%;
+    left: 50%;
+}
+
+
+.bottom-shadow {
+    width: 14vw;    
+    top: 85%;
+    left: 40%;
+}

@@ -39,7 +39,7 @@ function addToArray(elm){
 // FIND THE DIFFERENCE BETWEEN NUMBERS[0] AND NUMBERS[1] - THE OLDEST AND THE YOUNGEST ITEM
 function findDifference() {
     // DONE    
-    document.querySelector(`#number`).textContent = numbers[0];
+    let displayedNumber = createCountDown(numbers[0]);
     let oldestValue = Number(numbers[0]);
     let youngestValue = Number(numbers[1]);
     
@@ -65,6 +65,26 @@ function defineIntDown() {
 
 
 
+function createCountDown( from ) {
+    let counter = from;
+    let interval = 10000 / from;
+    
+    setTimeout( countDown, interval );
+    
+    function countDown() {
+    console.log( counter );
+    if( counter > numbers[1] ) {
+        counter--;
+        setTimeout( countDown, interval );
+    }
+   
+}
+}
+
+
+
+
+
 function beginCountingUp() {
     console.log(`Up by 1`);
 }
@@ -74,5 +94,3 @@ function beginCountingUp() {
 function beginCountingDown() {
     console.log(`Down by 1`);
 }
-
-
